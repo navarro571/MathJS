@@ -1,0 +1,59 @@
+@import "./variables";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px);
+    background-color: $background-color;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 450px;
+        padding: 40px;
+        box-shadow: 0px 0px 10px 5px $main-color;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            font-size: $text-size;
+
+            input {
+                height: 40px;
+                width: 400px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 16px;
+            }
+            button {
+                height: 40px;
+                width: 200px;
+                border: none;
+                font-size: 20px;
+                align-self: center;
+                background-color: $main-color;
+                transition: width 0.3s, font-size 0.3s;
+                &:hover{
+                    width: 230px;
+                    font-size: 22px;
+                }
+            }
+        }
+        .result{
+            display: none;
+            h2{
+                font-size: $text-size;
+            }
+            .result-text {
+                display: flex;
+                align-items: center;
+            }
+            #result-txt{
+                margin-left: 5px;
+                font-size: 22px;
+            }
+        }
+    }
+}

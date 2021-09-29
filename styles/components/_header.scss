@@ -1,0 +1,22 @@
+@import "./variables";
+
+header
+{
+    width: 100%;
+    .container {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        border-left: solid 8px $main-color;
+        border-bottom: solid 2px $border-color;
+        background-color: $background-color;
+        .logo {
+            margin-left: 25px;
+            display: flex;
+            align-items: center;
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+}

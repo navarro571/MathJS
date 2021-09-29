@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/style.css">
+    <title>Calcular Cuotas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://img.icons8.com/color/48/000000/calculate.png" alt="Logo calculadora"/>
+                <h2>MathJS</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Calcular cuotas a pagar</h1>
+            <form>
+                <label for="inputPrecio">Precio</label>
+                <input id="inputPrecio" type="number" />
+                <label for="inputComision">Comision</label>
+                <input id="inputComision" type="number" placeholder="example: 5, 10" />
+                <label for="inputCuotas">Cuotas</label>
+                <input id="inputCuotas" type="number" />
+                <button type="button" onclick="calcPricePerMonth()">Calcular</button>
+            </form>
+            <div id="resultContainer" class="result">
+                <h2>Resultado: </h2>
+                <div class="result-text">
+                    <p>El precio a pagar por mes es: </p>
+                    <p id="result-txt">000</p>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Todos los derechos reservados <a href="https://github.com/navarro571/">@Navarro</a></p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
